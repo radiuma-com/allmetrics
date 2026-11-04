@@ -136,11 +136,19 @@ acc = accuracy_score(
 ```python
 import allmetrics
 
-allmetrics.classification.list_of_metrics()
+print(allmetrics.classification.list_of_metrics)
 ```
 **To retrieve detailed information about a specific metric:**
+
+To inspect details, parameters, and mathematical formulas of any metric, use standard Python documentation tools:
+
+
 ```python
-allmetrics.classification.get_metric_details("accuracy_score")
+# View full docstring and parameter guide
+help(allmetrics.classification.accuracy_score)
+
+# Or print the docstring directly
+print(allmetrics.classification.accuracy_score.__doc__)
 ```
 This discovery mechanism allows users to easily inspect available metrics, understand parameter configurations, and select appropriate evaluation measures for their experiments.
 
@@ -213,11 +221,13 @@ AllMetrics includes 50+ standardized evaluation metrics covering multiple machin
 ### 📈 Regression
 - mean_absolute_error
 - mean_squared_error
+- root_mean_squared_error (New)
 - mean_bias_deviation
 - r_squared
-- r_squared(adjusted)
+- adjusted_r2_score (New)
 - mean_absolute_percentage_error
 - symmetric_mean_absolute_percentage_error
+- mean_absolute_scaled_error (MASE) (New)
 - huber_loss
 - relative_squared_error
 - mean_squared_log_error
@@ -256,18 +266,23 @@ AllMetrics includes 50+ standardized evaluation metrics covering multiple machin
 - rand_score
 - adjusted_mutual_info_score
 - fowlkes_mallows_score
+- dunn_index (New)
 
 ### 🧠 Segmentation (2D/3D)
 - dice_score
+- generalized_dice_score (New)
 - iou_score
 - sensitivity
 - specificity
 - precision
 - hausdorff_distance
+- hausdorff_95 (New)
 
 ### 🖼️ Image-to-Image Translation
 - ssim
 - psnr
+- image_mae (New)
+- image_rmse (New)
 
 # 🧩 Library Design Principles
 AllMetrics is designed around a set of principles aimed at ensuring reproducibility, transparency, and consistency in machine learning metric evaluation.
@@ -541,19 +556,21 @@ AllMetrics makes these assumptions explicit through configuration parameters.
 
 # 🕒 Version History
 
-### v0.0.0 — 2025-03-05
+### v1.1.0 — 2026-10-30
+
+Added support for new metrics: confusion_matrix, roc_auc_score, pr_auc_score, log_loss, root_mean_squared_error, adjusted_r2_score, MASE, AMI, dunn_index, generalized_dice_score, hausdorff_95, image_mae and image_rmse.
+
+Fixed cdist import bug in clustering module (silhouette_score, calinski_harabasz_score, davies_bouldin_score).
+
+Added full multi-channel RGB support for ssim.
+
+Fixed default parameter handling for fbeta_score and multi-class classification checks.
+
+Enhanced PyTorch Tensor and NumPy interoperability across all task modules.
+
+### v1.0.10 — 2025-03-05
+
 Initial public release of AllMetrics.
-Key features:
-
-- unified evaluation framework for machine learning metrics
-- support for classification, regression, clustering, segmentation, and image-to-image evaluation
-- implementation of 50+ standardized metrics
-- explicit control of Implementation Differences (ID) and Reporting Differences (RD)
-- integrated data validation layer
-- modular task-based API
-- support for 2D and 3D segmentation evaluation
-Future versions will expand metric coverage, improve reporting capabilities, and introduce additional validation tools for advanced machine learning workflows.
-
 
 
 # 📬 Maintenance
