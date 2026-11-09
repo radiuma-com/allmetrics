@@ -581,7 +581,7 @@ For technical support and maintenance inquiries, please contact:
 
 msalman@bccrc.ca – m.salmanpoor66@gmail.com – m.salmanpour@ubc.ca
 
-**Morteza Alizadeh (Assistant Team Lead)**
+**Morteza Alizadeh (Manager)**
 
 alizadehmorteza2020@gmail.com
 
@@ -589,13 +589,9 @@ alizadehmorteza2020@gmail.com
 
 - **Morteza Alizadeh (Backend Development, Code Refactoring, Debugging, Library Management)**
 - **Mehrdad Oveisi (Evaluator, Software Engineer, and Advisor)** 
-- **Sonya Falahati (Testing and Data prepration)** 
-- **Ghazal Mousavi (Testing and Data prepration)**
-- **Mohsen Alambardar Meybodi (Advisor)**
-- **Somayeh Sadat Mehrnia (Coordinator)**
-- **Ilker Hacihaliloglu (Advisor)**
-- **Arman Rahmim (Fund Provider, Medical Imaging Expert, Evaluator, and Advisor)** 
-- **Mohammad R. Salmanpour (Fund Provider, Medical Imaging Expert, Evaluator, and Advisor)** 
+- **Sonya Falahati (Testing and Data Prepration)** 
+- **Ghazal Mousavi (Testing and Data Prepration)**
+- **Mohammad R. Salmanpour (Team Lead, Supervisor, Fund Provider, Medical Imaging Expert, and Evaluator)** 
 
 # 📚Citation
 
