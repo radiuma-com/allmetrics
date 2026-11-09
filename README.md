@@ -629,7 +629,7 @@ This study was supported by:
 - [🏥 BC Cancer Research Institute, Department of Basic and Translational Research, Vancouver, BC, Canada](https://www.bccrc.ca/)  
 - [💻 **Vir**tual **Collab**oration (VirCollab) Group, Vancouver, BC, Canada](https://vircollab.com/#/) 
 - [🏭 **Tec**hnological **Vi**rtual **Co**llaboration **Corp**oration (TECVICO Corp.), Vancouver, BC, Canada](https://www.tecvico.com)  
-We gratefully acknowledge funding from the💰 Natural Sciences and Engineering Research Council of Canada (**NSERC**) Idea to Innovation [**I2I**] Grant **GR034192**.
+
 
 ---
 # 📬Contact
