@@ -1,14 +1,14 @@
-# AllMetrics: A Unified Python Library for Standardized Metric Evaluation in Machine Learning
+# allmetrics: A Unified Python Library for Standardized Metric Evaluation in Machine Learning
 
 **Paper:** https://arxiv.org/abs/2505.15931  
 **PyPI:** https://pypi.org/project/allmetrics/  
 **Python Version:** 3.11+
 
-**AllMetrics** is a comprehensive Python library designed to **standardize performance metric evaluation across diverse machine learning tasks**. It provides a unified API for computing metrics while ensuring **robust data validation, consistent implementations, and standardized reporting formats**.
+**allmetrics** is a comprehensive Python library designed to **standardize performance metric evaluation across diverse machine learning tasks**. It provides a unified API for computing metrics while ensuring **robust data validation, consistent implementations, and standardized reporting formats**.
 
-Many existing libraries compute evaluation metrics differently, leading to **inconsistent results across research papers, tools, and frameworks**. AllMetrics addresses these issues by providing **consistent implementations, validation mechanisms, and unified outputs** across multiple machine learning domains.
+Many existing libraries compute evaluation metrics differently, leading to **inconsistent results across research papers, tools, and frameworks**. allmetrics addresses these issues by providing **consistent implementations, validation mechanisms, and unified outputs** across multiple machine learning domains.
 
-AllMetrics supports evaluation for:
+allmetrics supports evaluation for:
 
 - **Regression**
 - **Classification**
@@ -53,14 +53,14 @@ variations in how results are aggregated or summarized (e.g., micro, macro, weig
 
 As a consequence, identical models evaluated on identical datasets may produce different results depending on the library, framework, or configuration used. This makes cross-study comparisons difficult and may undermine reproducibility in machine learning research.
 
-AllMetrics was developed to address this challenge. It provides a unified and transparent framework for computing evaluation metrics across a wide range of machine learning tasks. The library standardizes metric implementations, explicitly exposes evaluation assumptions, and integrates robust data validation mechanisms to ensure reliable and reproducible results.
+allmetrics was developed to address this challenge. It provides a unified and transparent framework for computing evaluation metrics across a wide range of machine learning tasks. The library standardizes metric implementations, explicitly exposes evaluation assumptions, and integrates robust data validation mechanisms to ensure reliable and reproducible results.
 
-By unifying metric evaluation for classification, regression, clustering, segmentation, and image-to-image analysis, AllMetrics enables consistent benchmarking and facilitates reproducible experimentation across diverse ML workflows.
+By unifying metric evaluation for classification, regression, clustering, segmentation, and image-to-image analysis, allmetrics enables consistent benchmarking and facilitates reproducible experimentation across diverse ML workflows.
 
 
 # ✨ Key Features
 ### Unified Metric Evaluation
-AllMetrics provides standardized implementations of evaluation metrics across multiple machine learning tasks, including classification, regression, clustering, segmentation, and image-to-image translation.
+allmetrics provides standardized implementations of evaluation metrics across multiple machine learning tasks, including classification, regression, clustering, segmentation, and image-to-image translation.
 
 ### Explicit Control of Evaluation Assumptions
 The library explicitly distinguishes between Implementation Differences (ID) and Reporting Differences (RD), enabling transparent and reproducible metric evaluation.
@@ -84,7 +84,7 @@ Users can extend the library by adding custom metrics or integrating new validat
 The library includes more than 50 evaluation metrics spanning multiple ML domains.
 
 ### Support for Advanced Applications
-AllMetrics supports specialized scenarios such as:
+allmetrics supports specialized scenarios such as:
 
 - multi-class and multi-label classification
 - 2D and 3D medical image segmentation
@@ -93,7 +93,7 @@ AllMetrics supports specialized scenarios such as:
 
 
 # 📥 Installation
-AllMetrics can be installed directly from PyPI using pip:
+allmetrics can be installed directly from PyPI using pip:
 ```bash
 pip install allmetrics
 ```
@@ -105,7 +105,7 @@ The package is designed to integrate easily with common scientific computing and
 
 
 # 🚀 Quick Start
-**The following example demonstrates how to compute a simple classification metric using AllMetrics.**
+**The following example demonstrates how to compute a simple classification metric using allmetrics.**
 ```python
 from allmetrics.classification import accuracy_score
 
@@ -115,7 +115,7 @@ y_pred = [1, 0, 0, 1, 0]
 acc = accuracy_score(y_true, y_pred)
 print("Accuracy:", acc)
 ```
-AllMetrics provides additional configuration options that allow users to control validation behavior and evaluation assumptions.
+allmetrics provides additional configuration options that allow users to control validation behavior and evaluation assumptions.
 
 **Example with validation options:**
 ```python
@@ -153,7 +153,7 @@ print(allmetrics.classification.accuracy_score.__doc__)
 This discovery mechanism allows users to easily inspect available metrics, understand parameter configurations, and select appropriate evaluation measures for their experiments.
 
 # 📈 Task Examples
-The following examples demonstrate how AllMetrics can be used across different machine learning tasks. The library provides a consistent API for computing evaluation metrics in classification, regression, segmentation, clustering, and image-to-image analysis.
+The following examples demonstrate how allmetrics can be used across different machine learning tasks. The library provides a consistent API for computing evaluation metrics in classification, regression, segmentation, clustering, and image-to-image analysis.
 ## 📊 Classification Example
 ```python
 from allmetrics.classification import f1_score
@@ -214,9 +214,9 @@ print("Dice Score:", dice)
 ```
 Key point:
 
-AllMetrics supports 2D and 3D segmentation evaluation, including metrics such as Dice, IoU, Hausdorff Distance, and ASSD, which are widely used in medical imaging.
+allmetrics supports 2D and 3D segmentation evaluation, including metrics such as Dice, IoU, Hausdorff Distance, and ASSD, which are widely used in medical imaging.
 # 📚 Supported Metrics
-AllMetrics includes 50+ standardized evaluation metrics covering multiple machine learning tasks. The implementations follow consistent definitions and transparent evaluation assumptions.
+allmetrics includes 50+ standardized evaluation metrics covering multiple machine learning tasks. The implementations follow consistent definitions and transparent evaluation assumptions.
 
 ### 📈 Regression
 - mean_absolute_error
@@ -285,12 +285,12 @@ AllMetrics includes 50+ standardized evaluation metrics covering multiple machin
 - image_rmse (New)
 
 # 🧩 Library Design Principles
-AllMetrics is designed around a set of principles aimed at ensuring reproducibility, transparency, and consistency in machine learning metric evaluation.
+allmetrics is designed around a set of principles aimed at ensuring reproducibility, transparency, and consistency in machine learning metric evaluation.
 
 1. Standardized Metric Implementations
 All metrics are implemented using consistent mathematical definitions and verified implementations. This minimizes Implementation Differences (ID) that often arise across different libraries.
 2. Explicit ID/RD Control
-A core design concept of AllMetrics is the explicit distinction between:
+A core design concept of allmetrics is the explicit distinction between:
 
 - ### **Implementation Differences (ID)**
 - ### **Reporting Differences (RD)**
@@ -325,10 +325,10 @@ Generates interpretable and structured evaluation results.
 Allows users to add custom metrics or extend the library.
 
 4. Task-Agnostic API
-AllMetrics provides a task-agnostic API design. Metrics across different tasks follow similar function signatures and parameter conventions, making the library easy to learn and use.
+allmetrics provides a task-agnostic API design. Metrics across different tasks follow similar function signatures and parameter conventions, making the library easy to learn and use.
 
 5. Robust Validation by Default
-To prevent misleading results, AllMetrics performs automatic validation checks before computing metrics. These checks may include:
+To prevent misleading results, allmetrics performs automatic validation checks before computing metrics. These checks may include:
 
 - missing classes
 - abnormal correlations
@@ -337,12 +337,12 @@ To prevent misleading results, AllMetrics performs automatic validation checks b
 - invalid value ranges
 Users can customize or disable these checks depending on their workflow.
 6. Extensible and Research-Friendly
-The library is designed to support research workflows. Users can easily extend AllMetrics by implementing new metrics while leveraging the existing validation and reporting infrastructure.
+The library is designed to support research workflows. Users can easily extend allmetrics by implementing new metrics while leveraging the existing validation and reporting infrastructure.
 
-This extensibility makes AllMetrics suitable for both applied machine learning projects and academic research.
+This extensibility makes allmetrics suitable for both applied machine learning projects and academic research.
 
 # 📊 Output Format
-AllMetrics is designed to produce clear, interpretable, and reproducible outputs. Metric functions typically return a numerical value, but they can also provide structured summaries when detailed reporting is enabled.
+allmetrics is designed to produce clear, interpretable, and reproducible outputs. Metric functions typically return a numerical value, but they can also provide structured summaries when detailed reporting is enabled.
 
 ### Standard Output
 Most metrics return a single numeric value:
@@ -384,7 +384,7 @@ Example class-wise output (average="none"):
 [0.82, 0.76, 0.91]
 ```
 # ⚠️ Data Validation
-Reliable evaluation requires reliable inputs. AllMetrics includes an integrated data validation layer that automatically checks input data before computing metrics.
+Reliable evaluation requires reliable inputs. allmetrics includes an integrated data validation layer that automatically checks input data before computing metrics.
 
 These checks help detect common issues that can silently distort evaluation results.
 ### Shape Consistency
@@ -403,7 +403,7 @@ Examples:
 - segmentation masks containing invalid values
 - regression predictions with NaN or infinite values
 ### Class Presence & Balance
-For classification tasks, AllMetrics can check:
+For classification tasks, allmetrics can check:
 
 - missing classes in predictions
 - severe class imbalance
@@ -443,7 +443,7 @@ accuracy_score(
 )
 ```
 # 📚 API Structure
-AllMetrics follows a task-oriented modular API design, where metrics are organized by machine learning task. This structure keeps the library intuitive and easy to navigate.
+allmetrics follows a task-oriented modular API design, where metrics are organized by machine learning task. This structure keeps the library intuitive and easy to navigate.
 
 ## Main Modules
 ```bash
@@ -465,7 +465,7 @@ from allmetrics.segmentation import dice_score
 from allmetrics.imagetoimage import psnr
 ```
 ## Metric Discovery Utilities
-AllMetrics provides built-in utilities to explore available metrics.
+allmetrics provides built-in utilities to explore available metrics.
 
 List metrics within a module:
 ```python
@@ -550,7 +550,7 @@ If results differ from those produced by another library, possible reasons inclu
 - different aggregation strategies
 - different implementation assumptions
 - different handling of edge cases
-AllMetrics makes these assumptions explicit through configuration parameters.
+allmetrics makes these assumptions explicit through configuration parameters.
 
 
 
@@ -570,7 +570,7 @@ Enhanced PyTorch Tensor and NumPy interoperability across all task modules.
 
 ### v1.0.10 — 2025-03-05
 
-Initial public release of AllMetrics.
+Initial public release of allmetrics.
 
 
 # 📬 Maintenance
@@ -597,7 +597,7 @@ alizadehmorteza2020@gmail.com
 
 ```bibtex
 @misc{abcdefgh,
-      title={AllMetrics: A Unified Python Library for Standardized Metric Evaluation and Robust Data Validation in Machine Learning}, 
+      title={allmetrics: A Unified Python Library for Standardized Metric Evaluation and Robust Data Validation in Machine Learning}, 
       author={Morteza Alizadeh and Mehrdad Oveisi and Sonya Falahati and Ghazal Mousavi and Mohsen Alambardar Meybodi and Somayeh Sadat Mehrnia and Ilker Hacihaliloglu and Arman Rahmim and Mohammad R. Salmanpour.},
       year={2025},
       eprint={2511.15963},
@@ -629,7 +629,7 @@ This study was supported by:
 
 ---
 # 📬Contact
-AllMetrics is available **free of charge**.
+allmetrics is available **free of charge**.
 For access, questions, or feedback:
 
 **Morteza Alizadeh (Backend Developer)**
