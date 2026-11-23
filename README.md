@@ -496,7 +496,7 @@ Where:
 This consistent API allows users to switch between metrics without changing their workflow.
 
 # ❓ Troubleshooting
-This section addresses common issues users may encounter when using AllMetrics.
+This section addresses common issues users may encounter when using allmetrics.
 
 ## Shape Mismatch Errors
 Problem
