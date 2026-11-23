@@ -1,5 +1,5 @@
 # allmetrics: A Unified Python Library for Standardized Metric Evaluation in Machine Learning
-![allmetrics Logo](https://raw.githubusercontent.com/radiuma-com/AllMetrics/main/logo.png)
+![allmetrics Logo](https://github.com/radiuma-com/allmetrics/blob/main/allmetrics.PNG)
 
 **Paper:** https://arxiv.org/abs/2505.15931  
 **PyPI:** https://pypi.org/project/allmetrics/  
